@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blackjack Game</title>
+    <style>
+        body{
+            background-color: rgb(53, 53, 53);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body onload="Start()">
+
+    <p id="Lataus"></p>
+
+    Koneen Kortit
+    <p id="AICards"></p>
+    <p id="AIyht"></p>
+    Sinun korttit
+    <p id="MainCards"></p>
+    <p id="Plyht"></p>
+    
+    <button id="hitbutton" onclick="HitCard()">Jatka (nosta kortti)</button> 
+    <button id="standbutton" onclick="StandCalc()">Jää</button> 
+    <p id="PLCombCards"></p>
+    <p id="AICombCards"></p>
+    
+    <button id="restart" onclick="Start()">Aloita Uudestaan?</button>
+    
+    
+    <script src="BJ.js"></script>
+</body>
+</html>
